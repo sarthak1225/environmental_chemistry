@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Outreach</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/EVS.html">Home</a></li>
+            <li><a href="/environmental benefits.html">Environmental Benefits</a></li>
+            <li><a href="/Ev models.html">EV Models</a></li>
+            <li><a href="/cost saving.html">Cost Saving</a></li>
+            <li><a href="/digitaloutreach.html">Digital Outreach</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Digital Outreach Section -->
+    <section id="digital-outreach">
+        <div class="section-container">
+            <h2 class="section-title">Powering the Future: Digital Outreach for EV Awareness</h2>
+            <p class="intro">As electric vehicles (EVs) become a major part of the transportation revolution, digital outreach is key to educating the public. From interactive online campaigns to real-time digital tools, we aim to engage and empower individuals to make the switch to cleaner, greener transportation.</p>
+
+            <!-- Digital Outreach Campaign Overview -->
+            <div class="campaign-overview">
+                <h3>Digital Outreach Strategies That Work</h3>
+                <p>Through innovative digital strategies, we have reached thousands of people, spreading knowledge about electric vehicles and their benefits. Here are the key components of our outreach:</p>
+                <div class="strategies">
+                    <div class="strategy-card">
+                        <h4>Social Media Campaigns</h4>
+                        <img src="https://inc42.com/wp-content/uploads/2018/09/EV-FEATURE.jpg" alt="Social Media Outreach">
+                        <p>We harness the power of social platforms such as Facebook, Instagram, and Twitter to inform and inspire. Our interactive posts encourage conversation and raise awareness about the importance of EVs.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h4>Engaging Webinars & Workshops</h4>
+                        <img src="https://www.developtraining.co.uk/wp-content/uploads/2022/03/Electric-vehicle-charging-webinar.jpg" alt="Webinars and Workshops">
+                        <p>Interactive online sessions where we dive deep into topics like EV technology, the future of transportation, and how individuals can benefit from adopting electric vehicles.</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h4>Influencer Collaborations</h4>
+                        <img src="https://blog.evsolutions.com/hubfs/2023-EVS/HS2023-Celebrate%20World%20EV%20Day.png" alt="Influencer Outreach">
+                        <p>Partnering with influencers to amplify the message of sustainability, we reach millions of followers who are eager to learn about the EV revolution.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive EV Calculator Tool -->
+            <div class="calculator-section">
+                <h3>Calculate Your EV Savings</h3>
+                <p>Use our interactive calculator to estimate how much you can save by switching to an electric vehicle. You’ll be surprised by the savings on fuel, maintenance, and more!</p>
+                <button onclick="calculateSavings()">Calculate Savings</button>
+                <div id="calculator-result" style="display:none;">
+                    <h4>Your Estimated Savings:</h4>
+                    <p id="savings"></p>
+                </div>
+            </div>
+
+            <!-- Outreach Impact Chart -->
+            <div class="outreach-chart">
+                <h3>Impact of Our Digital Outreach</h3>
+                <p>Take a look at how our outreach efforts have evolved over time and the impact we’ve made in spreading EV awareness:</p>
+                <canvas id="outreachChart" width="400" height="200"></canvas>
+            </div>
+
+            <!-- Social Media Engagement -->
+            <div class="social-engagement">
+                <h3>Join the Movement</h3>
+                <p>Follow us on social media and stay updated with the latest EV news, offers, and community initiatives. Let’s spread the word together!</p>
+                <div class="social-links">
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-top">
+                        <div class="footer-column">
+                            <h3>About Us</h3>
+                            <p>We are dedicated to promoting sustainable transportation solutions and educating the public on the benefits of electric vehicles. Join us in paving the way to a cleaner, greener future.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Contact Us</h3>
+                            <ul class="contact-info">
+                                <li>Email: <a href="mailto:support@evawareness.com">support@evawareness.com</a></li>
+                                <li>Phone: +1 (800) 123-4567</li>
+                                <li>Address: 123 Green Road, Eco City, Earth</li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Follow Us</h3>
+                            <p>Stay connected with us on social media for the latest updates, news, and promotions:</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <ul class="quick-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">EV Models</a></li>
+                                <li><a href="#">Charging Stations</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Electric Vehicle Awareness Initiative. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Chart.js code for outreach impact chart
+        const ctx = document.getElementById('outreachChart').getContext('2d');
+        const outreachChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Digital Outreach Engagement',
+                    data: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
+                    borderColor: '#2E8B57',
+                    backgroundColor: 'rgba(46, 139, 87, 0.2)',
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // EV Savings Calculator functionality
+        function calculateSavings() {
+            const savings = (Math.random() * 2000).toFixed(2); // Simulated savings value
+            document.getElementById('calculator-result').style.display = 'block';
+            document.getElementById('savings').innerHTML = '$' + savings + ' per year';
+        }
+    </script>
+</body>
+</html>
+
+<style>
+    /* Same header and footer styles as before */
+    nav {
+        background: linear-gradient(45deg, #677ae8, #2E8B57);
+        color: #ffffff;
+        font-size: 20px;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #0056b3;
+        color: #fff;
+    }
+
+    footer {
+        background-color: #222;
+        color: #fff;
+        padding: 40px 20px;
+        font-size: 0.9em;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        flex: 1 1 200px;
+        margin: 10px;
+    }
+
+    .footer-column h3 {
+        border-bottom: 2px solid #4CAF50;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        color: #4CAF50;
+    }
+
+    .footer-column p, 
+    .footer-column a, 
+    .footer-column li {
+        line-height: 1.8;
+        color: #bbb;
+    }
+
+    .footer-column a {
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-column a:hover {
+        color: #76c7c0;
+        text-decoration: underline;
+    }
+
+    .social-links a {
+        display: block;
+        margin-bottom: 5px;
+        color: #bbb;
+    }
+
+    .social-links a:hover {
+        color: #76c7c0;
+    }
+
+    .quick-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .quick-links li {
+        margin: 5px 0;
+    }
+
+    .contact-info {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-info li {
+        margin: 5px 0;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 0.8em;
+        color: #bbb;
+    }
+
+    /* Digital Outreach Styles */
+    #digital-outreach {
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+    }
+
+    .section-container {
+        max-width: 1200px;
+        margin: auto;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 30px;
+    }
+
+    .section-title {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2E8B57;
+    }
+
+    .intro {
+        font-size: 1.2em;
+        line-height: 1.6;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .campaign-overview {
+        margin-bottom: 50px;
+    }
+
+    .strategies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .strategy-card {
+        width: 30%;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f0f8ff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .strategy-card h4 {
+        color: #2E8B57;
+        margin-bottom: 15px;
+    }
+
+    .strategy-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .calculator-section {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .calculator-section button {
+        padding: 10px 20px;
+        background-color: #2E8B57;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .calculator-section button:hover {
+        background-color: #0056b3;
+    }
+
+    .outreach-chart {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .social-links {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .social-links a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #2E8B57;
+        font-size: 1.5em;
+        transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+        color: #0056b3;
+    }
+</style>

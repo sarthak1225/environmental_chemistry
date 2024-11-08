@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raising Awareness of Electric Vehicles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-PoQ+HtmNxbs3rO1xUgXzj8BvZwV3HdYx+oR6Z2l4Ekx94SzQ4xosHb8ktzCZ6aunBFIiyjFrW7R5bEUFzZ9+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="/EVS.html">Home</a></li>
+            <li><a href="/environmental benefits.html">Environmental Benefits</a></li>
+            <li><a href="/Ev models.html">EV MODELS</a></li>
+            <li><a href="/cost saving.html">cost saving</a></li>
+            <li><a href="/digitaloutreach.html">Digital Outreach</a></li>
+            <li><a href="/contact.html" >Contact</a></li>
+            <li><button onclick="window.location.href='/login and signup.html'">Login</button></li>
+            <li><button onclick="window.location.href='/login and signup.html'">Register</button></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section with Background Image -->
+    <header id="home">
+        <h1>Raising Awareness of Electric Vehicles</h1>
+        <p>Join us in paving the way to a cleaner, sustainable future.</p>
+        <button onclick="window.location.href='#why-evs'">Learn More</button>
+        <button onclick="window.location.href='#join'">Get Involved</button>
+    </header>
+
+    <!-- Why EVs Section with Half Image and Text Divs -->
+    <section id="why-evs">
+        <h2>Why Choose Electric Vehicles?</h2>
+        <div class="content-section">
+            <div class="text">
+                <h3>Environmental Impact</h3>
+                <p>write paragraph on environmental impact
+                    Electric vehicles (EVs) have a significant positive impact on the environment. By producing zero tailpipe emissions, EVs help reduce the amount of harmful pollutants released into the atmosphere. This is crucial in combating climate change and improving air quality, especially in urban areas where air pollution levels are typically higher. The transition to EVs also reduces dependency on fossil fuels, which are major contributors to greenhouse gas emissions. Additionally, many EVs are charged using renewable energy sources such as solar or wind power, further decreasing their overall environmental footprint. As more people adopt electric vehicles, the cumulative effect can lead to a substantial reduction in the carbon footprint of the transportation sector, promoting a healthier and more sustainable planet.</p>
+            </div>
+            <div class="image">
+                <img src="https://img.freepik.com/premium-vector/electric-car-charging-station-front-view-electric-car-silhouette-with-green-glowing-dark-blue_77399-1550.jpg" alt="Environment benefits of EVs">
+            </div>
+        </div>
+        <div class="content-section">
+            <div class="image">
+                <img src="https://img.freepik.com/premium-vector/electric-car-charging-station-front-view-electric-car-silhouette-with-green-glowing-dark-blue_77399-1550.jpg" alt="Cost savings of EVs">
+            </div>
+            <div class="text">
+                <h3>Cost Savings</h3>
+                <p>Electric vehicles (EVs) offer substantial cost-saving benefits over their lifespan. One of the primary savings comes from the lower cost of electricity compared to gasoline or diesel. Charging an EV is significantly cheaper than refueling a traditional combustion engine vehicle. Additionally, EVs have fewer moving parts, which means they require less maintenance. There is no need for oil changes, transmission repairs, or exhaust system replacements, resulting in lower overall maintenance costs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section with a Chart -->
+    <section id="introduction">
+        <h2>EV Awareness Chart</h2>
+        <p>Electric vehicles (EVs) are reshaping the way we think about transportation...</p>
+        <canvas id="awarenessChart" width="600" height="300"></canvas>
+    </section>
+
+    <!-- cars section -->
+     
+
+    <!-- Interactive Map Section -->
+    <section id="technology">
+        <h2>Charging Station Map</h2>
+        <p>Explore EV charging stations near you.</p>
+        <div id="map"></div>
+    </section>
+
+    <!-- Campaign Strategy Section with Video Embed -->
+    <section id="campaign">
+        <h2>Campaign Strategy</h2>
+        <p>Our campaign aims to educate, engage, and inspire people to embrace EVs.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" title="EV Campaign Video" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Digital Outreach Section -->
+    <section id="digital-outreach">
+        <h2>Digital Outreach & Social Media</h2>
+        <p>Follow us on social media to stay updated on the latest EV trends and insights.</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We are dedicated to promoting sustainable transportation solutions and educating the public on the benefits of electric vehicles. Join us in paving the way to a cleaner, greener future.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li>Email: <a href="mailto:support@evawareness.com">support@evawareness.com</a></li>
+                    <li>Phone: +1 (800) 123-4567</li>
+                    <li>Address: 123 Green Road, Eco City, Earth</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>Stay connected with us on social media for the latest updates, news, and promotions:</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">EV Models</a></li>
+                    <li><a href="#">Charging Stations</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Electric Vehicle Awareness Initiative. All rights reserved.</p>
+            <p>Electric Vehicle Awareness Initiative is dedicated to promoting sustainable transportation solutions and educating the public on the benefits of electric vehicles.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- JavaScript for Chart and Map -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Chart.js example for awareness levels
+        const ctx = document.getElementById('awarenessChart').getContext('2d');
+        const awarenessChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Low', 'Medium', 'High'],
+                datasets: [{
+                    label: 'Awareness Levels',
+                    data: [30, 50, 20],
+                    backgroundColor: ['#007BFF', '#28A745', '#FFC107'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' }
+                }
+            }
+        });
+
+        // Leaflet.js map setup (replace with your API key if needed)
+        const map = L.map('map').setView([51.505, -0.09], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    </script>
+
+</body>
+</html>
+
+<style>
+    /* Navigation Bar */
+    
+nav {
+    background: linear-gradient(45deg, #677ae8, #2E8B57);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+nav ul li button {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Header with Background */
+header {
+    background: url(https://img.freepik.com/premium-vector/electric-car-charging-station-front-view-electric-car-silhouette-with-green-glowing-dark-blue_77399-1550.jpg) no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+
+header button {
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1.1em;
+    color: #ffffff;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.content-section .text,
+.content-section .image {
+    flex: 1;
+    padding: 30px;
+}
+
+.content-section .text h3 {
+    font-size: 1.8em;
+    color: #0056b3;
+}
+
+.content-section .text p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.content-section .image img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.content-section .image img:hover {
+    transform: scale(1.05);
+}
+
+/* Map Section */
+#map {
+    height: 400px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Style */
+canvas {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #4CAF50, #28A745);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #45A049, #279736);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    color: #0056b3;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007BFF;
+}
+
+form button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.footer-column p, 
+.footer-column a, 
+.footer-column li {
+    line-height: 1.8;
+    color: #bbb;
+}
+
+.footer-column a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #76c7c0;
+    text-decoration: underline;
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.social-links a:hover {
+    color: #76c7c0;
+}
+
+.quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin: 5px 0;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #bbb;
+}
+
+
+</style>
